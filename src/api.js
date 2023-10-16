@@ -13,6 +13,7 @@ const fetchIpInfo = ip => {
 }
 
 const form = document.querySelector('#form');
+const input = document.querySelector('#ip');
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
