@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get IP info</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <script defer src="../src/api.js"></script>
 </head>
 
 <body>
@@ -18,7 +19,7 @@
             <input required id="ip" type="text" placeholder="Enter here the ip" pattern="^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$"/>
 
             <small>
-                For example: 54.85.132.205
+                For example: 185.65.135.230
             </small>
 
             <button id="submit" type="submit">
@@ -27,13 +28,8 @@
         </form>
 
         <div>
-            <pre id="results">
-
-            </pre>
+            <pre id="results"></pre>
         </div>
     </main>
 </body>
-
-<script src="https://cdn.jsdelivr.net/npm/@picocss/pico@1.5.10/css/postcss.config.min.js"></script>
-
 </html>
