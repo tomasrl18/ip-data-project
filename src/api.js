@@ -17,6 +17,7 @@ const fetchIpInfo = (ip) => {
 const form = document.getElementById("#form");
 const input = document.getElementById("#ip");
 const submit = document.getElementById("#submit");
+const results = document.getElementById("#results");
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
