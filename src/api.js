@@ -14,10 +14,13 @@ const fetchIpInfo = ip => {
 
 const form = document.querySelector('#form');
 const input = document.querySelector('#ip');
+const submit = document.querySelector('#submit');
 
-form.addEventListener('submit', (event) => {
+form.addEventListener('submit', async (event) => {
     event.preventDefault();
 
     const {value} = input;
     if (!value) return;
+
+    const ipInfo = await fetchIpInfo(value);
 });
