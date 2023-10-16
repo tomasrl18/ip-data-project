@@ -17,4 +17,7 @@ const input = document.querySelector('#ip');
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
+
+    const {value} = input;
+    if (!value) return;
 });
